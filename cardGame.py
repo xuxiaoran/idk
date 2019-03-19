@@ -1,5 +1,7 @@
 #!/bin/python
 # http://datagenetics.com/blog/october42014/index.html
+# x is the number cards in hand
+# y is the number of black cards in hand
 
 def helper(x,y, value_matrix):
     card_remaining = 52-x
@@ -57,5 +59,4 @@ def cardGame(x, y):
     print "%.2f, %r" % (expected, current_score < expected)
 
 if __name__ == '__main__':
-    
     cardGame(0, 0)
